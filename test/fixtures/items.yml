@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  area: MyString
+  ranking: 9.99
+  factor: 1
+
+two:
+  area: MyString
+  ranking: 9.99
+  factor: 1
