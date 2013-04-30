@@ -1,4 +1,7 @@
 Risk::Application.routes.draw do
+  resources :areas
+
+
   resources :items
 
 

@@ -1,13 +1,14 @@
 <%= form_for @item, :html => { :class => 'form-horizontal' } do |f| %>
-	<div class="control-group">
-	  <%= f.label :area_id, :class => 'control-label' %>
-	  <div class="controls">
-	  </div>
-	</div>
   <div class="control-group">
-    <%= f.label :area, :class => 'control-label' %>
+    <%= f.label :name, :class => 'control-label' %>
     <div class="controls">
-      <%= f.text_field :area, :class => 'text_field' %>
+      <%= f.text_field :name, :class => 'text_field' %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :area_id, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.collection_select :area_id, Area.all, :id, :name, :prompt => 'Please Select Area'%>
     </div>
   </div>
   <div class="control-group">
